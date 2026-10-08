@@ -10,18 +10,7 @@ From the repository root:
 python3 -m http.server 8080 --bind 127.0.0.1 --directory github
 ```
 
-Open http://127.0.0.1:8080. Alternatively, serve the repository root and open `/github/`; all site assets use relative paths so GitHub Pages project subpaths work.
-
-## Publish on GitHub Pages
-
-The repository includes `.github/workflows/faculty-atlas-pages.yml`, following [GitHub’s custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). It publishes only the website files in `github`, independently of the main TanStack application.
-
-1. Commit and push the page and workflow to `master`.
-2. In the repository’s **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the source.
-3. Run **Deploy Faculty Atlas introduction to Pages** from the Actions tab, or push a change to `github/` on `master`.
-4. The deployment job reports the published URL. For this repository, the expected address is https://ggntju.github.io/faculty_contact_frontend/.
-
-If using a different repository or custom domain, update the canonical URL and Open Graph URLs in `index.html`. Update the workflow’s branch filter if the default branch is different. The workflow has not been run by creating these source files.
+Open http://127.0.0.1:8080. Alternatively, serve the repository root; all site assets use relative paths so GitHub Pages project subpaths work.
 
 ## Content and assets
 
